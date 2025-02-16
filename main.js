@@ -1,5 +1,5 @@
 // Global variables
-var timeLeft = 1 * 60; // seconds
+var timeLeft = 5 * 60; // seconds
 var timerInterval;
 var currentInterval = 'pomodoro';
 var backgroundColor = '#F1F1EF'; // Default background color
@@ -54,11 +54,11 @@ startStopBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
     stopTimer();
     if (currentInterval === 'pomodoro') {
-        timeLeft = workDuration 1 * 60;
+        timeLeft = workDuration * 60;
     } else if (currentInterval === 'short-break') {
-        timeLeft = 1 * 60;
+        timeLeft = 5 * 60;
     } else {
-        timeLeft = 1 * 60;
+        timeLeft = 5 * 60;
     }
     updateTimeLeftTextContent();
     startStopBtn.textContent = 'Start';
