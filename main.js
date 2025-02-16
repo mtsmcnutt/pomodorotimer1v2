@@ -1,10 +1,10 @@
 // Global variables
-var timeLeft = 5 * 60; // seconds
+var timeLeft = 1 * 60; // seconds
 var timerInterval;
 var currentInterval = 'pomodoro';
 var backgroundColor = '#F1F1EF'; // Default background color
 var fontColor = '#37352F'; // Default font color
-var workDuration = 5; // Default work duration in minutes
+var workDuration = 1; // Default work duration in minutes
 
 // DOM elements
 const timeLeftEl = document.getElementById('time-left');
@@ -56,9 +56,9 @@ resetBtn.addEventListener('click', () => {
     if (currentInterval === 'pomodoro') {
         timeLeft = workDuration * 60;
     } else if (currentInterval === 'short-break') {
-        timeLeft = 5 * 60;
+        timeLeft = 1 * 60;
     } else {
-        timeLeft = 5 * 60;
+        timeLeft = 1 * 60;
     }
     updateTimeLeftTextContent();
     startStopBtn.textContent = 'Start';
