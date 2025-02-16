@@ -54,7 +54,7 @@ startStopBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
     stopTimer();
     if (currentInterval === 'pomodoro') {
-        timeLeft = workDuration * 60;
+        timeLeft = workDuration 1 * 60;
     } else if (currentInterval === 'short-break') {
         timeLeft = 1 * 60;
     } else {
