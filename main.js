@@ -4,7 +4,7 @@ var timerInterval;
 var currentInterval = 'pomodoro';
 var backgroundColor = '#F1F1EF'; // Default background color
 var fontColor = '#37352F'; // Default font color
-var workDuration = 1; // Default work duration in minutes
+var workDuration = 5; // Default work duration in minutes
 
 // DOM elements
 const timeLeftEl = document.getElementById('time-left');
